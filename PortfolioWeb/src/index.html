@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-0">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js"
+    crossorigin="anonymous"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+      "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.esm.min.js"
+    }
+  }
+  </script>
+  <script type="module">
+    import * as bootstrap from 'bootstrap'
+
+    new bootstrap.Popover(document.getElementById('popoverButton')) 
+  </script>
+
+  <title>Portifolio rento</title>
+</head>
+
+<header>
+  <div class="caixa1">
+    <!--  <img src="Imgs/titre.png" alt="Logo">-->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill"
+      viewBox="0 0 16 16">
+      <circle cx="8" cy="8" r="8" />
+    </svg>
+    <h5>JRenato</h5>
+  </div>
+  <!----------------------------------------------------------------------------------------------NAV------------------------------------------------------------------------------------------>
+  <nav>
+    <!----------------------------------------------------------------------------------------------Botão para o inicio------------------------------------------------------------------------------------------>
+    <a href="index.html"><button type="button" class="btn btn-outline-primary">Home</button></a>
+    <!-----------------------------------------------------------------------------------NOSSOS CONTATOS------------------------------------------------------------------------------------------>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      Nossos contatos
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Nossos contatos</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Número para contato no whatsApp: (85) 9-8546-4574</p>
+            <p>Email: naia7664@uorak.com</p>
+            <p>Instagram: JRenato_2007</p>
+            <p>Twitter: JRenato_2007</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------SOBRE-NOS------------------------------------------------------------------------------------------>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Sobre mim
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Sobre a minha pessoa</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Um estudante do segundo ano da EEEP José de Barcelos, quebrado e tentando melhorar.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------SERVIÇOS------------------------------------------------------------------------------------------>
+    <a href="servicos.html"> <button type="button" class="btn btn-outline-primary">Serviços</button></a>
+    <!----------------------------------------------------------------------------------------------CADASTRO DO CLIENTE------------------------------------------------------------------------------------------>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Cadrasta-se
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+    <!----------------------------------------------------------------------------------------------Modal---------------------------------------------------------------------------------- -->
+    
+      <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p><form>
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3">
+    </div>
+  </div>
+  <fieldset class="row mb-3">
+    <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          First radio
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          Second radio
+        </label>
+      </div>
+      <div class="form-check disabled">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+        <label class="form-check-label" for="gridRadios3">
+          Third disabled radio
+        </label>
+      </div>
+    </div>
+  </fieldset>
+  <div class="row mb-3">
+    <div class="col-sm-10 offset-sm-2">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          Example checkbox
+        </label>
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+</header>
+
+
+<body>
+  <!------------------------------------------------------------------------------------------------INICIO DAS INFORMAÇÕES----------------------------------------------------------------------->
+  <main>
+    <div class="sbr">
+      <h1>Bem-vindo, este é o portifolio de Renato.</h1>
+      <p>Aqui irei mostrar minhas produções e meus conhecimentos sobre o mundo da Ti.</p>
+    </div>
+    <img src="Imgs/Eu.jpg" alt="Imagem_autor" class="pht">
+  </main>
+  </div>
+  <div class="contall">
+    <section class="secs1">
+      <!----------------------------------------------------------------------------------------Div principal sobre os conhecimentos----------------------------------------------------------->
+      <div class="container text-center">
+
+        <h2>Meus conhecimentos </h2>
+        <div class="row row-cols-4">
+          <!---------------------------------------------------------------------------- Div do HTML ---------------------------------------------------------------------------------->
+          <div class="col">
+            <h3>HTML</h3>
+            <p class="justf">Conheço muitas tags do html, e continuo sempre a aprender sobre a hierarquia delas.</p>
+
+            <svg viewBox="0 0 128 128" class="devicons">
+              <path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"></path>
+              <path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"></path>
+              <path fill="#EBEBEB"
+                d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z">
+              </path>
+              <path fill="#fff"
+                d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z">
+              </path>
+            </svg>
+          </div>
+
+          <!------------------------------------------------------------------------ Div do css------------------------------------------------------------------------------------------------>
+          <div class="col">
+            <h3>CSS</h3>
+            <p class="justf">Tenho uma boa base sobre essa linguagem de estilização, sempre tentando dominar ao máximo
+              sobre as
+              funções
+              do
+              display flex e grid layout.</p>
+
+            <svg viewBox="0 0 128 128" class="devicons">
+              <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z">
+              </path>
+              <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path>
+              <path fill="#fff"
+                d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z">
+              </path>
+              <path fill="#EBEBEB"
+                d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z">
+              </path>
+              <path fill="#fff"
+                d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"></path>
+              <path fill="#EBEBEB"
+                d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z">
+              </path>
+            </svg>
+
+          </div>
+          <!--------------------------------------------------------------------------------------Div do bootstrap---------------------------------------------------------------------------->
+          <div class="col">
+            <h3>Bootstrap</h3>
+            <p class="justf">Conehco um pouco sobre o bootstrap e tento sempre aumentar os conhecimentos nessa area</p>
+            <svg viewBox="0 0 128 128" class="devicons">
+              <defs>
+                <linearGradient id="bootstrap-original-a" x1="76.079" x2="523.48" y1="10.798" y2="365.95"
+                  gradientTransform="translate(1.11 14.613) scale(.24566)" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#9013fe" offset="0"></stop>
+                  <stop stop-color="#6610f2" offset="1"></stop>
+                </linearGradient>
+                <linearGradient id="bootstrap-original-b" x1="193.51" x2="293.51" y1="109.74" y2="278.87"
+                  gradientTransform="translate(0 52)" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#fff" offset="0"></stop>
+                  <stop stop-color="#f1e5fc" offset="1"></stop>
+                </linearGradient>
+                <filter id="bootstrap-original-c" x="161.9" y="135.46" width="197" height="249"
+                  color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                  <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+                  <feOffset dy="4"></feOffset>
+                  <feGaussianBlur stdDeviation="8"></feGaussianBlur>
+                  <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                  <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+                  <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+                </filter>
+              </defs>
+              <path
+                d="M14.985 27.712c-.237-6.815 5.072-13.099 12.249-13.099h73.54c7.177 0 12.486 6.284 12.249 13.099-.228 6.546.068 15.026 2.202 21.94 2.141 6.936 5.751 11.319 11.664 11.883v6.387c-5.913.564-9.523 4.947-11.664 11.883-2.134 6.914-2.43 15.394-2.202 21.94.237 6.815-5.072 13.098-12.249 13.098h-73.54c-7.177 0-12.486-6.284-12.249-13.098.228-6.546-.068-15.026-2.203-21.94-2.14-6.935-5.76-11.319-11.673-11.883v-6.387c5.913-.563 9.533-4.947 11.673-11.883 2.135-6.914 2.43-15.394 2.203-21.94z"
+                fill="url(#bootstrap-original-a)"></path>
+              <path transform="translate(1.494 2.203) scale(.24566)"
+                d="M267.1 364.46c47.297 0 75.798-23.158 75.798-61.355 0-28.873-20.336-49.776-50.532-53.085v-1.203c22.185-3.609 39.594-24.211 39.594-47.219 0-32.783-25.882-54.138-65.322-54.138h-88.74v217zm-54.692-189.48h45.911c24.958 0 39.131 11.128 39.131 31.279 0 21.505-16.484 33.535-46.372 33.535h-38.67zm0 161.96v-71.431h45.602c32.661 0 49.608 12.03 49.608 35.49 0 23.459-16.484 35.941-47.605 35.941z"
+                fill="url(#bootstrap-original-b)" filter="url(#bootstrap-original-c)" stroke="#fff"></path>
+            </svg>
+          </div>
+          <!--div do Javascript-->
+          <div class="col">
+            <h3>Javascript</h3>
+            <p class="justf">Possuo pouco conhecimento sobre essa linguagem, mas entendo um pouco sober a utilização
+              para dinamização
+              do
+              site</p>
+            <svg viewBox="0 0 128 128" class="devicons">
+              <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path>
+              <path fill="#323330"
+                d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z">
+              </path>
+            </svg>
+          </div>
+    </section>
+    <section class="secs2">
+      <div class="sessao-projetos" id="projetos">
+        <div class="sessao-header" id="title">
+          <h1 align="center">Projetos</h1>
+        </div>
+        <div class="projetos">
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="Imgs/proj1_resized.jpg" imagem do projeto ToDo />
+            </div>
+            <div class="card-info">
+              <h2>Crud</h2>
+              <h3>PHP</h3>
+              <p>Sistema de cadastro de pessoas feito durante as aulas do murilo.</p>
+              <p> Nesse saiba mais você ira ver esse site no meu github.</p>
+              <a href="Crud/Crud.php"><button class="btn">Saiba Mais</button></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="Imgs/proj2_resized.jpg" alt="imagem do projeto Maratona" />
+            </div>
+            <div class="card-info">
+              <h2>Apresentação</h2>
+              <h3>HTML, CSS</h3>
+              <p>Um site de apresentação para informar aquele que esta acessando o site.</p>
+              <a href="proj1/index.html"><button class="btn">Saiba Mais</button></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="Imgs/proj3.jpg" alt="imagem do projeto Casa Bela" />
+            </div>
+            <div class="card-info">
+              <h2>Foto da praia</h2>
+              <h3>Design</h3>
+              <p>Imagem da praia demonstrando o desenvolvimento no design.</p>
+              <a href="Imgs/proj3.jpg"><button class="btn">Saiba Mais</button></a>
+            </div>
+          </div>
+        </div>
+    </section>
+  </div>
+
+</body>
+
+<!----------------------------------------------------------------------------------------FOOTERRRR-------------------------------------------------------------------------------------------->
+<footer>
+  <div class="rodp">
+    <h3>Direitos autorais para o José Renato</h3>
+    <!-- alt="..." on <img> element -->
+    <div class="icones">
+      <a href="https://www.instagram.com/sem/campaign/emailsignup/?campaign_id=13534421690&extra_1=s%7Cc%7C547348930993%7Ce%7Cinstagram%20%27%7C&placement=&creative=547348930993&keyword=instagram%20%27&partner_id=googlesem&extra_2=campaignid%3D13534421690%26adgroupid%3D126262409974%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-1321618851291%26loc_physical_ms%3D1001538%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMIvtDIvOf6ggMVPjutBh2qrQRmEAAYASAAEgI6n_D_BwE"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+        viewBox="0 0 16 16" id="icons">
+        <path
+          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+      </svg></a>
+      <a href="https://github.com/JRenato2007"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+        viewBox="0 0 16 16" id="icons">
+        <path
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+      </svg></a>
+      <a href="https://br.linkedin.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+        viewBox="0 0 16 16" id="icons">
+        <path
+          d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+      </svg></a>
+      <br>      
+        <div class="fech"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash"
+        viewBox="0 0 16 16" id="icons">
+        <path
+          d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+      </svg>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>

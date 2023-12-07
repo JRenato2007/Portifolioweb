@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* CORPO DO TEXTO */
+body {
+  background-color: #161A30;
+}
+
+/* CABEÇALHO */
+header {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #31304D;
+  border-bottom: outset;
+}
+
+/* SESSÃO DA PÁGINA NO HEADER*/
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+/*BOTÕES DA SESSÃO*/
+.btn.btn-outline-primary,
+.btn.btn-primary {
+  background: none;
+}
+
+/*BOTÕES DA SESSÃO*/
+.btn.btn-primary:hover,
+.btn.btn-outline-primary:hover {
+  transition: 0.2s;
+  background: #d3d4d5;
+}
+
+/* DIV DO TITULO DO SITE*/
+.caixa1 {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*LINKS DA SESSÃO*/
+a,
+.btn.btn-primary {
+  margin-right: 50px;
+}
+
+/* PARTE PRINCIPAL DO SITE*/
+main {
+  height: auto;
+  display: flex;
+  margin: -3px 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #B6BBC4;
+  padding-top: 15px;
+}
+
+/* FOTO DO MAIN*/
+.pht {
+  border-radius: 50%;
+  width: 350px;
+  box-shadow: 5px 5px 5px 7px #31304D;
+}
+
+/* SESSÃO DOS CONHECIMENTOS*/
+.secs1 {
+  padding-top: 50px;
+}
+
+/* CAIXAS DO FLEX*/
+.row.row-cols-4 {
+  margin: 0px -94px;
+}
+
+/* EDIÇÃO DAS SESSÕES*/
+.secs1,
+.secs2 {
+  width: 100%;
+  background-color: #B6BBC4;
+}
+
+/* CARDES DOS PROJETOS, RESPONSIVIDADE*/
+.projetos {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+  padding-bottom: 20px;
+}
+
+/* POSIÇÃO E TAMANHO DOS DOS CARDS*/
+.card {
+  width: 18rem;
+  height: 25rem;
+  position: relative;
+  border: none;
+}
+
+.card-img-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+}
+
+/* IMAGEM DOS CARDES*/
+.card-img-wrapper img {
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+  background: wheat;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+/* hover*/
+.card:hover .card-img-wrapper img {
+  opacity: 0.5;
+}
+
+/* TAMANHOS DAS INFORMAÇÕES DOS CARDS*/
+.card-info {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  padding: 2rem;
+  text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
+  transition: all 0.3s;
+}
+
+/* TAMANHOS DAS INFORMAÇÕES DOS CARDS*/
+.card-info h2 {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: 500;
+  color: #eee;
+}
+
+/* TAMANHOS DAS INFORMAÇÕES DOS CARDS*/
+.card-info h3 {
+  font-family: var(--font-action);
+  font-weight: bolder;
+  color: #ff4081;
+  margin-bottom: 1.5rem;
+}
+
+/* TAMANHOS DAS INFORMAÇÕES DOS CARDS*/
+.card-info p {
+  font-family: var(--font-secundary);
+  color: #eee;
+  font-weight: 400;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+/* BOTÃO DOS CARDS*/
+.btn {
+  background: #6a3093;
+  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+  background: linear-gradient(to left, #a044ff, #6a3093);
+  font-family: var(--font-action);
+  color: #eee;  
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+}
+
+/* BOTÃO DOS CARDS*/
+.card-info button {
+  width: 8rem;
+  height: 2.5rem;
+}
+
+/* BOTÃO DOS CARDS*/
+.card:hover .card-info {
+
+  opacity: 1;
+  visibility: visible;
+}
+
+/* JUSTIFICAÇÃO DO TEXTO*/
+.justf {
+  text-align: justify;
+}
+
+/* ICONES DOS CONHECIMENTOS*/
+.devicons {
+  width: 40px;
+}
+
+/* FINAL DA PÁGINA*/
+footer {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  background-color: #DDF2FD;
+  margin: -32px 0px;
+}
+
+/* RODAPE DO FOOTER*/
+.rodp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* ICONES */
+#icons {
+  width: 20px;
+  height: 30px;
+}
+
+/* TAMANHOS DOS ICONES */
+svg#icons.bi.bi-instagram,
+svg#icons.bi.bi-github,
+svg#icons.bi.bi-linkedin,
+svg#icons.bi.bi-code-slash {
+  width: 30px;
+  height: max-content;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.fech{
+padding-left: 83px;
+}
